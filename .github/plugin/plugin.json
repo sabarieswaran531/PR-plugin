@@ -1,0 +1,9 @@
+{
+    "name": "syncfusion/pr-remediation",
+    "version": "1.0.0",
+    "description": "Reads open reviewer comments on a GitHub Pull Request, applies the requested code changes, and commits the fixes back to the PR branch.",
+    "skills": [
+        "skills/"
+    ],
+    "mcpServers": ".mcp.json"
+}

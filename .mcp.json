@@ -1,0 +1,19 @@
+{
+    "inputs": [
+        {
+            "id": "github_token",
+            "type": "promptString",
+            "description": "GitHub Personal Access Token with 'repo' scope (required for reading PRs, comments, and pushing commits)",
+            "password": true
+        }
+    ],
+    "mcpServers": {
+        "github": {
+            "command": "npx",
+            "args": ["-y", "@modelcontextprotocol/server-github"],
+            "env": {
+                "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
+            }
+        }
+    }
+}
